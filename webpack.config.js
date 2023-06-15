@@ -21,13 +21,10 @@ module.exports = {
     devServer: {
         static: './dist',
     },
-    optimization: {
-        runtimeChunk: 'single',
-    },
+   
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
             template: './src/index.html',
         }),
     ],
-mode:'none'};
+mode:'development'};

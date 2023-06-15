@@ -88,13 +88,6 @@ ul li.checked::before {
   clear: both;
 }
 
-
-h3 {
-  margin-left: 45%;
-  color: #c91a1a;
-}
-
-
 /* Style the input */
 input {
   margin: 0;
