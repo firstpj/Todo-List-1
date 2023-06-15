@@ -4,14 +4,19 @@
   position: relative;
 }
 
-/* Remove margins and padding from the list */
-ul {
-  margin: 0;
-  padding: 0;
+#myUL {
+  padding-left: 40%;
 }
 
-h3 {
+/* Remove margins and padding from the list */
+ul {
+  margin: left 46%;
+  }
+
+.btn {
   padding-left: 46%;
+  padding: 12px;
+  background-color: #e1d6d6;
 }
 
 /* Style the list items */
@@ -19,7 +24,6 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
   font-size: 18px;
   transition: 0.2s;
 
@@ -32,19 +36,20 @@ ul li {
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
 
-/* Darker background-color on hover */
-ul li:hover {
-  background: #ddd;
 }
-
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #888;
-  color: #fff;
+  color: #0c0101;
   text-decoration: line-through;
+}
+
+#myDIV {
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  margin-inline: 38%;
 }
 
 /* Add a "checked" mark when clicked on */
@@ -70,8 +75,8 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f44336;
-  color: white;
+  background-color: #b99794;
+  color: rgb(35, 5, 5);
 }
 
 /* Style the header */
@@ -104,7 +109,7 @@ input {
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
-  color: #555;
+  color: #170202;
   float: left;
   text-align: center;
   font-size: 16px;
