@@ -1,9 +1,6 @@
 /* Include the padding and border in an element's total width and height */
-
-
 * {
   box-sizing: border-box;
-
   position: relative;
 }
 
@@ -86,8 +83,7 @@ ul li.checked::before {
 }
 
 /* Clear floats after the header */
-.header:after {
-  content: "";
+.header::after {
   display: table;
   clear: both;
 }
