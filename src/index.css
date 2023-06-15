@@ -13,6 +13,10 @@ ul {
   padding: 0;
 }
 
+h3 {
+  padding-left: 46%;
+}
+
 /* Style the list items */
 ul li {
   cursor: pointer;
