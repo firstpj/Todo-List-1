@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./src/index.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-</head>
+  <title>To-do List</title>
+ <link rel="stylesheet" href="index.css">
+<script defer src="main.js"></script></head>
 <body>
   <div id="myDIV" class="header">
-    <h2>My To Do List</h2>
+    <h2>To Do List</h2>
     <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
-  </div>
-  
+    <span class="addBtn">Add</span>
+  <button class="hbb btn" type="button">Clear all completed Tasks</button>
+</div>
   <ul id="myUL">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
+    <li>Meet at the gym</li>
+    <li class="checked">Buy airtime</li>
+    <li>Visit George</li>
+    <li>Look for jack</li>
+    <li>practic c#</li>
+    <li>Arrange office</li>
   </ul>
-  <script src="index.js"></script>
-</body>
+  </body>
 </html>

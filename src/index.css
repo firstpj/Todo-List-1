@@ -10,11 +10,10 @@
 
 /* Remove margins and padding from the list */
 ul {
-  margin: left 46%;
-  }
+  margin: 46%;
+}
 
-.btn { 
-  padding-left: 46%;
+.btn {
   padding: 12px;
   background-color: #e1d6d6;
 }
@@ -34,10 +33,6 @@ ul li {
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-
-}
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
   color: #0c0101;
