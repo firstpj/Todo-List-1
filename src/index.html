@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-do List</title>
-  <script src="https://kit.fontawesome.com/085161e9fd.js" crossorigin="anonymous"></script>
-<script defer src="index.bundle.js"></script></head>
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <title>Document</title>
+</head>
 <body>
   <div id="myDIV" class="header">
-    <h2>To Do List</h2>
+    <h2>My To Do List</h2>
     <input type="text" id="myInput" placeholder="Title...">
     <span onclick="newElement()" class="addBtn">Add</span>
-  <button class="hbb btn" type="button">Clear all completed Tasks</button>
-</div>
+  </div>
+  
   <ul id="myUL">
     <li>Hit the gym</li>
     <li class="checked">Pay bills</li>
@@ -23,5 +22,6 @@
     <li>Read a book</li>
     <li>Organize office</li>
   </ul>
+  <script src="./src/index.js"></script>
 </body>
 </html>
