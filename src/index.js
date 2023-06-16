@@ -1,4 +1,4 @@
-import'./index.css';
+import'./src/index.css';
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -35,7 +35,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert(" write something !");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
