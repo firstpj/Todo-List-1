@@ -1,12 +1,14 @@
-.bg-container {
-  background-color: #272727;
-  color: #272a31;
+.body-container {
+  padding: 22%;
+  padding-top: 2%;
+  background-color: #d4dbaf;
+  color: #020202;
   text-align: center;
   box-sizing: border-box;
 }
 
 .toDo-list {
-  width: 60%;
+  width: 56%;
   background-color: #ddd;
   margin: auto;
   padding: 1rem;

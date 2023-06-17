@@ -7,22 +7,22 @@ const listContainer = document.querySelector('.list');
 
 const task = [
   {
-    description: 'task1',
+    description: 'itema',
     completed: false,
     index: 1,
   },
   {
-    description: 'task2',
+    description: 'itemb',
     completed: false,
     index: 2,
   },
   {
-    description: 'task3',
+    description: 'itemc',
     completed: false,
     index: 4,
   },
   {
-    description: 'task4',
+    description: 'itemd',
     completed: false,
     index: 3,
   },

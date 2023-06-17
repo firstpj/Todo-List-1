@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-do List</title>
-  <script src="https://kit.fontawesome.com/085161e9fd.js" crossorigin="anonymous"></script>
-<script defer src="index.bundle.js"></script></head>
-<link rel="stylesheet" href="index.css">
-<body>
-  <div id="myDIV" class="header">
-    <h2>To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
-  <button class="hbb btn" type="button">Clear all completed Tasks</button>
-</div>
-  <ul id="myUL">
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>To-Do List</title>
+  </head>
+  <body class="body-container">
+    <div class="toDo-list">
+      <h1>ToDo-List</h1>
+      <span class="intro">
+        <h2>Today's ToDo</h2>
+        <i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+      </span>
+      <hr>
+      <span class="input-data">
+        <input class="inputs-field" type="text" placeholder="Add list">
+        <i class="fa-solid fa-arrow-turn-down-left"></i>
+      </span>
+      <div class="list"></div>
+      <button id="clear-button">Clear all completed</button>
+    </div>
+  </body>
 </html>
