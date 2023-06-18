@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-container {
+  color: #272a31;
+  text-align: center;
+}
+
+.toDo-list {
+  max-height: 80vh;
+  width: 60%;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  border: 1px solid #ddd;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+}
+
+.input-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.inputs-field {
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding-inline: 2rem;
+  width: 80%;
+}
+
+.input2 {
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding-inline: 0.2rem;
+  width: 80%;
+  font-size: 1.5rem;
+  color: #272a31;
+}
+
+.add-btn {
+  height: 3rem;
+  width: 3rem;
+  color: #272a31;
+  font-size: 2.5rem;
+  background-color: #fff;
+  border: none;
+}
+
+.both-sides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: #fff;
+}
+
+.left-items {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.right-items {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#clear-btn {
+  height: 3rem;
+  width: 40%;
+  border: none;
+  background-color: #ddd;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.line-1 {
+  width: 100%;
+  border: 0.02px solid #ddd;
+}

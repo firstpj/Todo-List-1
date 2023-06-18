@@ -1,1 +1,28 @@
-<head><script defer src="index.js"></script></head>
+<head><script defer src="index.js"></script></head><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>ToDo List</title>
+  <script defer src="main.js"></script></head>
+  <body class="body-container">
+    <div class="toDo-list">
+      <h1>ToDo List</h1>
+      <div class="intro">
+        <h2>Today's ToDo</h2>
+        <i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+      </div>
+      <hr class="line-1">
+      <div class="input-data">
+        <input class="inputs-field" id="input" type="text" placeholder="Add to your list...">
+        <button class="add-btn" type="submit">+</button>
+      </div>
+      <hr class="line-1">
+      <div class="list"></div>
+      <button id="clear-btn">Clear all completed</button>
+    </div>
+  </body>
+</html>

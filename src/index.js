@@ -1,56 +1,51 @@
-import'./src/index.css';
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+import './style.css';
+import {
+  getTodoList, addItem, markCompleted, removeItem, removeCompletedItems, editItem,
+} from './todoList.js';
+import displayToDoList from './display.js';
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
+const inputItem = document.querySelector('.inputs-field');
+const addButton = document.querySelector('.add-btn');
+const clearAll = document.querySelector('#clear-btn');
+let editIndex = -1;
+addButton.addEventListener('click', () => {
+  if (editIndex === -1) {
+    addItem(inputItem.value);
   } else {
-    document.getElementById("myUL").appendChild(li);
+    editItem(editIndex, inputItem.value);
+    editIndex = -1;
+    addButton.textContent = 'Add';
   }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
+  inputItem.value = '';
+  displayToDoList(getTodoList());
+});
+clearAll.addEventListener('click', () => {
+  removeCompletedItems();
+  displayToDoList(getTodoList());
+});
+// Event listener for marking an item as completed
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('complete-btn')) {
+    const itemIndex = parseInt(event.target.dataset.index, 10);
+    markCompleted(itemIndex);
+    displayToDoList(getTodoList());
   }
-}
+});
+// Event listener for removing an item
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('remove-btn')) {
+    const itemIndex = parseInt(event.target.dataset.index, 10);
+    removeItem(itemIndex);
+    displayToDoList(getTodoList());
+  }
+});
+// Event listener for editing an item
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('edit-btn')) {
+    const itemIndex = parseInt(event.target.dataset.index, 10);
+    inputItem.value = getTodoList()[itemIndex].description;
+    editIndex = itemIndex;
+    addButton.textContent = 'Save';
+  }
+});
+displayToDoList(getTodoList());
