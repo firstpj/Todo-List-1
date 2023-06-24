@@ -2,7 +2,7 @@ import './style.css';
 import {
   getTodoList, addItem, markCompleted, removeItem, removeCompletedItems, editItem,
 } from './todoList.js';
-import displayToDoList from './display.js';
+import displayToDoList from './show.js';
 
 const inputItem = document.querySelector('.inputs-field');
 const addButton = document.querySelector('.add-btn');
@@ -23,7 +23,7 @@ clearAll.addEventListener('click', () => {
   removeCompletedItems();
   displayToDoList(getTodoList());
 });
-// Event listener for marking an item as completed
+//occasion listener for marking an item as completed
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('complete-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);
@@ -31,7 +31,7 @@ document.addEventListener('click', (event) => {
     displayToDoList(getTodoList());
   }
 });
-// Event listener for removing an item
+// event listener for casting off an item
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);
@@ -39,7 +39,7 @@ document.addEventListener('click', (event) => {
     displayToDoList(getTodoList());
   }
 });
-// Event listener for editing an item
+// event listener for enhancing an object
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('edit-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);

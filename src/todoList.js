@@ -3,34 +3,39 @@ const getTodoList = () => todoList;
 const saveTodoList = () => {
   localStorage.setItem('todoList', JSON.stringify(todoList));
 };
-const addItem = (task) => {
-  if (task) {
+const addItem = (Undertaking) => {
+  if (Undertaking) {
     const taskItem = {
-      description: task,
+      description: Undertaking,
       completed: false,
     };
     todoList.push(taskItem);
     saveTodoList();
   }
 };
+
+const removeItem = (index) => {
+  todoList.splice(index, 1);
+  localStorage.setItem('todoList', JSON.stringify(todoList));
+};
+
+const removeCompletedItems = () => {
+  todoList = todoList.filter((item) => !item.completed);
+  saveTodoList();
+};
+
+const editItem = (index, description) => {
+  todoList[index].description = description;
+  saveTodoList();
+};
+
 const markCompleted = (itemIndex) => {
   if (itemIndex >= 0 && itemIndex < todoList.length) {
     todoList[itemIndex].completed = true;
     saveTodoList();
   }
 };
-const removeItem = (index) => {
-  todoList.splice(index, 1);
-  localStorage.setItem('todoList', JSON.stringify(todoList));
-};
-const removeCompletedItems = () => {
-  todoList = todoList.filter((item) => !item.completed);
-  saveTodoList();
-};
-const editItem = (index, description) => {
-  todoList[index].description = description;
-  saveTodoList();
-};
+
 export {
   getTodoList, addItem, markCompleted, removeItem, removeCompletedItems, editItem,
 };
