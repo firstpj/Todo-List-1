@@ -1,9 +1,9 @@
 body {
-  background-color: #fff;
+  background-color: #ada1a1;
 }
 .Bg-field {
-  background-color: #272727;
-  color: #272a31;
+  background-color: #c29d9d;
+  color: #9fafd4;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ body {
 .add-btn {
   height: 3rem;
   width: 3rem;
-  color: #272a31;
+  color: #aab4cc;
   font-size: 2.5rem;
   background-color: #fff;
   border: none;
