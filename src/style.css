@@ -1,17 +1,17 @@
-.body-container {
-  padding: 22%;
-  padding-top: 2%;
-  background-color: #d4dbaf;
-  color: #020202;
+body {
+  background-color: #ada1a1;
+}
+
+.Bg-field {
+  background-color: #c29d9d;
+  color: #9fafd4;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .toDo-list {
-  width: 56%;
-  background-color: #ddd;
+  width: 60%;
+  background-color: #fff;
   margin: auto;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,20 +24,48 @@
   align-items: center;
 }
 
-.inputs-field {
-  height: 3rem;
-  width: 100%;
-  border: none;
-  outline: none;
-}
-
-.list-properties {
+.enter-records {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
 }
 
-.left-items {
+.inputs-field {
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding-inline: 2rem;
+  width: 80%;
+}
+
+.input2 {
+  height: 3rem;
+  outline: none;
+  padding-inline: 0.2rem;
+  width: 80%;
+  font-size: 1.5rem;
+  color: #272a31;
+}
+
+.add-btn {
+  height: 3rem;
+  width: 3rem;
+  color: #aab4cc;
+  font-size: 2.5rem;
+  background-color: #fff;
+  border: none;
+}
+
+.each-aspects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: #fff;
+}
+
+.left-objects {
   display: flex;
   gap: 0.5rem;
 }
@@ -45,5 +73,4 @@
 #clear-btn {
   height: 2.5rem;
   border: none;
-  margin: auto;
 }
