@@ -1,7 +1,6 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: #fff;
 }
-
 .Bg-field {
   background-color: #272727;
   color: #272a31;
@@ -70,19 +69,7 @@
   gap: 0.5rem;
 }
 
-.right-items {
-  display: flex;
-  gap: 0.5rem;
-}
-
 #clear-btn {
   height: 2.5rem;
   border: none;
-  margin-top: 1rem;
-  background-color: #ddd;
-}
-
-.line-1 {
-  width: 80%;
-  border: 0.02px solid #ddd;
 }
