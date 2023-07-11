@@ -23,7 +23,6 @@ clearAll.addEventListener('click', () => {
   removeCompletedItems();
   displayToDoList(getTodoList());
 });
-// Event listener for marking an item as completed
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('complete-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);
@@ -31,7 +30,6 @@ document.addEventListener('click', (event) => {
     displayToDoList(getTodoList());
   }
 });
-// Event listener for removing an item
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);
@@ -39,7 +37,6 @@ document.addEventListener('click', (event) => {
     displayToDoList(getTodoList());
   }
 });
-// Event listener for editing an item
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('edit-btn')) {
     const itemIndex = parseInt(event.target.dataset.index, 10);

@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.bg-container {
+.Bg-field {
   background-color: #272727;
   color: #272a31;
   text-align: center;
@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.input-data {
+.enter-records {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +58,7 @@
   border: none;
 }
 
-.both-sides {
+.each-aspects {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@
   background-color: #fff;
 }
 
-.left-items {
+.left-objects {
   display: flex;
   gap: 0.5rem;
 }
@@ -84,6 +84,6 @@
 }
 
 .line-1 {
-  width: 100%;
+  width: 80%;
   border: 0.02px solid #ddd;
 }
